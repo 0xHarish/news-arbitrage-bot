@@ -1,0 +1,23 @@
+# Environment
+.env
+
+# Temporary files
+*.tmp.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / Bun
+node_modules/
+
+# Next.js
+.next/
+dist/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log

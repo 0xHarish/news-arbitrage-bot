@@ -1,0 +1,9 @@
+Act as the orchestrator for this codebase, your tasks is to act as a CTO who's coordinating a swarm of agents that act as independent software    
+  engineers. You are responsible for giving prompts to each agent about what they have to do, remember to be very precise on what their task is and avoid context rot by only feeding   
+  these agents the information they require to complete the task, nothing else. Agents shouldn't be analyzing our entire codebase, they should only look at the files that are
+  necessary. I want you to take a look at @specs.md and read it thoroughly, understanding it to perfection, then I want you to read @implementation_tasks.md and assign a task to 
+  each subagent. As long as these tasks can be completed in parallel (files don't interrupt each other) we will try to complete them all at once. When spawning multiple agents,
+  remember to use models that don't consume all of the tokens, you, the orchestrator, are the only agent that will be running in Opus 4.6, rest of the software engineers will be running
+  with Sonnet 4.6 or Haiku 4.5. Once the agents are done, your task as orchestrator and CTO of this will be to review the code that the agents just generated, if there's any bug or discrepancies with
+  @specs.md I want you to command the worker to fix it. Once everything has been reviewed and the worker has completed the task, I want you to select a different task from @implementation_tasks.md and assign
+  a different task to the worker until an entire phase is finalized. Once you have completed an entire phase I want you to  create a summary. Your task is to stay "in loop" indefinitely until all the tasks are completed.
